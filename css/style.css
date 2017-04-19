@@ -1,0 +1,203 @@
+body{
+  background: #ffffff;
+}
+
+.content{
+  margin-top: 5px;
+}
+
+h2{
+  font-family: 'Questrial';
+  color: #2d3e50;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: -10px;
+}
+
+label{
+  font-family: 'Questrial';
+  color: #1e3d51;
+}
+
+button, .btn{
+  font-family: 'Questrial';
+  font-size: 15px;
+  background: #001a33;
+  border: 0;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button, .btn:hover{
+  background: #18bd9b;
+  font-style: bold;
+  color: black;
+}
+
+input[placeholder]{
+  color: black;
+  font-family: 'Questrial';
+  border-color: #b3b3b3;
+}
+
+::-webkit-input-placeholder {
+  color: #b4b4b5;
+  opacity: transparent;
+  font-family: 'Questrial';
+}
+
+.form-control, .input-group-addon{
+  border-color: #b3b3b3;
+}
+
+.fa{
+  font-family: "FontAwesome";
+  color: #ffffff;
+  font-style: normal;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #18bd9b;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-family: 'Questrial';
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: .5s;
+}
+
+.closebtn:hover{
+  color: #001a33;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.li-menu{
+  list-style: none;
+  color: transparent;
+  width: 500px;
+  margin-left: -50px;
+  background: transparent;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.li-menu:hover{
+  background: #001a33;
+  cursor: hand;
+}
+
+.sidenav a:hover .fa{
+  color: #18bd9b;
+  font-size: 27px;
+  cursor: hand;
+}
+
+.li-menu a:hover{
+  color: #fff;
+  font-size: 27px;
+  font-style: bold;
+  cursor: hand;
+}
+
+#barra{
+  background-color: #001a33;
+  font-family: 'Questrial';
+  color: white;
+}
+
+#barra a{
+  color: white;
+}
+
+#barra .botonmenu{
+  font-family: 'Questrial';
+  color: white;
+  background-color: #001a33;
+  border: none;
+}
+
+#barra .dropdown-toggle{
+  font-family: 'Questrial';
+  color: white;
+}
+
+#barra a:hover .fa{
+  color: #18bd9b;
+}
+
+#barra .botonmenu:hover{
+  color: #18bd9b;
+  cursor: pointer;
+}
+
+#barra a:hover{
+  color: #18bd9b;
+}
+
+#side a:hover .fa-user{
+  color: #18bd9b;
+}
+
+#side .fa:hover{
+  color: #18bd9b;
+}
+
+.dropdown, .dropdown-menu{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  margin: auto;
+  margin-left: -25%;
+  background-color: #001a33;
+  font-family: 'Questrial';
+}
+
+.dropdown-header{
+  font-size: 16px;
+  color: #18bd9b;
+  text-align: center;
+}
+
+#barra #usuarios, #asistentes, #talleres, #visitas, #salir{
+  font-family: 'Questrial';
+  font-weight: 550;
+}
+
+#main input, select{
+  font-weight: normal;
+}

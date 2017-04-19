@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/light-bootstrap-dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+    <link href="css/login.css" rel="stylesheet"/>
+    <title>Input</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+
+        <div class="row">
+            <div class="iconmelon">
+              <svg viewBox="0 0 90 32">
+                <img src="css/input_logo.png" width="175" height="100"/>
+              </svg>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-heading">
+                <div class="panel-title text-center">Login</div>
+            </div>
+
+            <div class="panel-body" >
+              <form action="validar.php" name="form" id="form" class="form-horizontal" enctype="multipart/form-data" method="post">
+
+                  <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                      <input id="user" type="text" class="form-control" name="nnombre" value="" placeholder="Usuario" autocomplete="off">
+                  </div>
+
+                  <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-key" aria-hidden="true"></i></span>
+                      <input id="contraseña" type="password" class="form-control" name="npassword" placeholder="Contraseña" autocomplete="off">
+                  </div>
+
+                  <div class="form-group">
+                      <!-- Button -->
+                      <div class="col-sm-12 controls">
+                          <button type="submit" href="menu.html" class="btn btn-primary pull-right">Ingresar</button>
+                      </div>
+                  </div>
+
+              </form>
+
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

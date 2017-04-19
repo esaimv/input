@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Visitas</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/light-bootstrap-dashboard.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/ihover.css">
+    <link rel="stylesheet" href="css/ihover.min.css">
+  </head>
+  <body>
+    <div id="main">
+      <center>
+        <h2>Visitas</h2>
+          <div class="col-md-8 col-md-offset-2">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="ih-item circle effect6 scale_down"><a id="intugo" href="#">
+                  <div class="img"><img src="css/Visitas/logo_intugo.png" alt="img"></div>
+                  <div class="info">
+                    <h3>Intugo</h3>
+                    <p>Ayudamos a empresas extranjeras con todos sus procesos para que operan en México.</p>
+                  </div></a>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="ih-item circle effect6 scale_down"><a id="tiempo" href="#">
+                  <div class="img"><img src="css/Visitas/logo_tiempo.png" alt="img"></div>
+                  <div class="info">
+                    <h3>Tiempo Development</h3>
+                    <p>Transforma la manera en la que las compañías de software desarrollan, implementan y dan soporte a sus productos.</p>
+                  </div></a>
+                </div>
+              </div>
+            </div>
+
+            <br><br>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="ih-item circle effect6 scale_down"><a id="nearsoft" href="#">
+                  <div class="img"><img src="css/Visitas/logo_nearsoft.png" alt="img"></div>
+                  <div class="info">
+                    <h3>Nearsoft</h3>
+                    <p>Contacto directo de la comunidad IT en México y el equipo de reclutamiento de Nearsoft.</p>
+                  </div></a>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="ih-item circle effect6 scale_down"><a id="crol" href="#">
+                  <div class="img"><img src="css/Visitas/logo_crol.jpg" alt="img"></div>
+                  <div class="info">
+                    <h3>Crol</h3>
+                    <p>Consultoría organizacional y de negocios, desarrollo e implementación de sistemas integrales de información.</p>
+                  </div></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+      </center>
+
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-tittle" id="myModalLabel">Reporte visita</h4>
+            </div>
+            <div class="modal-body" id="modalbody">
+              <b id="nombrevisita"></b>
+              <table class="table" id="tabla">
+                <img src="css/logo_ith.png" width="570px">
+                <thead>
+                  <th>Número de carnet</th>
+                  <th>Nombre</th>
+                  <th>Apellido paterno</th>
+                  <th>Apellido materno</th>
+                  <th>Asistencia</th>
+                </thead>
+                <tbody id="tablebody"></tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal" id="descargar">Descargar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/visitas.js" type="text/javascript"></script>
+    <script src="js/jspdf.debug.js" type="text/javascript"></script>
+    </div>
+  </body>
+</html>

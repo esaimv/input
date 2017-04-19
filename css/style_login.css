@@ -1,0 +1,89 @@
+body {
+  background: #2d3e50;
+  font-family: 'Questrial';
+}
+
+img{
+  align-content: center;
+  width: 180px;
+  height: 100px;
+  top: 35%;
+  left: 50%;
+  margin: -250px 0px 0px 0px;
+  -webkit-animation: 1.5s rebotein 1;
+}
+
+@-webkit-keyframes rebotein{
+/*Izquierda a derecha*/
+  0%{
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+  }
+  50%{
+    opacity: 1;
+    -webkit-transform: translateX(30px);
+  }
+  70%{
+    opacity: 1;
+    -webkit-transform: translateX(-10px);
+  }
+}
+
+h2{
+  color: #b4b4b5;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  margin: 180px 0px 0px 0px;
+}
+
+.login{
+  width: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: 25%;
+  margin: -184px 0px 0px -155px;
+  background: rgba(0,0,0,0.2);
+  padding: 70px 30px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 0px rgba(0,0,0,0.3),inset 0px 1px 0px rgba(255,255,255,0.07);
+}
+
+input[type="text"], input[type="password"] {
+  width: 250px;
+  padding: 25px 0px;
+  background: transparent;
+  border: 0;
+  border-bottom: 3px solid rgba(255,255,255,0.04);
+  outline: none;
+  color: #46485c;
+  font-size: 15px;
+}
+
+button[type="submit"] {
+  font-family: 'Questrial';
+  font-size: 15px;
+  background: #2d3e50;
+  border: 0;
+  width: 250px;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+button[type="submit"]:hover {
+  background: #18bd9b;
+}
+
+input[placeholder]{
+  color: #b4b4b5;
+  font-family: 'Questrial';
+}
+
+::-webkit-input-placeholder {
+  color: #b4b4b5;
+  opacity: transparent;
+  font-family: 'Questrial';
+}

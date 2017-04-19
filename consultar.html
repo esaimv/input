@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Consultar</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/light-bootstrap-dashboard.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+  </head>
+  <body>
+    <div id="main">
+      <h2>Consultar</h2>
+      <div class="content">
+        <div class="container-fluid">
+          <div class="col-md-8 col-md-offset-2">
+            <form id="formBuscar">
+              <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-3">
+                  <label for="nocarnet">Número de carnet:</label>
+                  <input type="text" class="form-control" id="nocarnet" placeholder="Número de carnet" autocomplete="off">
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-4">
+                  <br>
+                  <button type="submit" id="buscar" class="btn btn-default" enable>Buscar</button>
+                </div>
+
+                <div class="" id="qrcode">
+
+                </div>
+              </div>
+
+              <div class="row">
+                <br>
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" class="form-control" id="nombre" placeholder="Nombre" readonly>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <label for="apellido_pat">Apellido paterno:</label>
+                  <input type="text" class="form-control" id="apellido_pat" name="apellido_pat" placeholder="Apellido paterno" readonly>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <label for="apellido_mat">Apellido materno:</label>
+                  <input type="text" class="form-control" id="apellido_mat" name="apellido_mat" placeholder="Apellido materno" readonly>
+                </div>
+              </div>
+
+              <div class="row">
+                <br>
+                <div class="col-xs-6 col-sm-6 col-md-3">
+                  <label for="escuela">Escuela:</label>
+                  <input type="text" class="form-control" id="escuela" name="escuela" placeholder="Escuela" readonly>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-4">
+                  <label for="correo">Correo:</label>
+                  <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo electronico" readonly>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3">
+                  <label for="telefono">Teléfono:</label>
+                  <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" readonly>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-2">
+                  <label for="talla">Talla:</label>
+                  <select class="form-control" id="talla" readonly></select>
+                </div>
+              </div>
+
+              <div class="row">
+                <br>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                  <label for="carnet">Carnet:</label>
+                  <select class="form-control" id="carnet" readonly></select>
+                </div>
+
+                <div class="col-xs-6 col-sm-4 col-md-4">
+                  <label for="taller">Taller:</label>
+                  <select class="form-control" id="taller" readonly></select>
+                </div>
+
+                <div class="col-xs-6 col-sm-4 col-md-4">
+                  <label for="visita">Visita:</label>
+                  <select class="form-control" id="visita" readonly></select>
+                </div>
+              </div>
+
+              <div class="row">
+                <br>
+                <div class="col-xs-6 col-sm-3 col-md-3">
+                  <label for="abonado">Abonado</label>
+                  <div class="input-group">
+                    <div class="input-group-addon">$</div>
+                    <input type="text" class="form-control" id="abonado" readonly>
+                  </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-3 col-md-3">
+                  <label for="precio">Precio carnet</label>
+                  <div class="input-group">
+                    <div class="input-group-addon">$</div>
+                    <input type="text" class="form-control" id="precio" readonly>
+                  </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-3 col-md-3">
+                  <label for="restante">Restante</label>
+                  <div class="input-group">
+                    <div class="input-group-addon">$</div>
+                    <input type="text" class="form-control" id="restante" readonly>
+                  </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-3 col-md-3">
+                  <label for="abono">Abono</label><a href="#" id="historial">&nbsp;Historial</a>
+                  <div class="input-group">
+                    <div class="input-group-addon">$</div>
+                    <input type="text" class="form-control" id="abono">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <br>
+                <div class="col-xs-4">
+                  <br>
+                  <button type="submit" class="btn btn-default" id="modificar" disabled="true">Modificar</button>
+                </div>
+
+                <div class="col-xs-4">
+                  <br>
+                  <button type="submit" class="btn btn-default" id="eliminar" disabled="true">Eliminar</button>
+                </div>
+
+                <div class="col-xs-4">
+                  <br>
+                  <button type="submit" class="btn btn-default" id="actualizar" disabled="true">Actualizar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Historial de pago</h4>
+          </div>
+          <div class="modal-body" id="modalbody">
+            <table class="table" id="tablajson">
+              <thead>
+                <th>Numero de Carnet</th>
+                <th>Fecha</th>
+                <th>Abono</th>
+              </thead>
+              <tbody id="tablebody"></tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/consulta.js" type="text/javascript"></script>
+    <script src="js/menu.js" type="text/javascript"></script>
+    <script src="js/qrcode.js" type="text/javascript"></script>
+  </body>
+</html>

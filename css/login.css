@@ -1,0 +1,115 @@
+body {
+  background-color: #2d3e50;
+}
+
+img, .panel{
+  -webkit-animation: 1.5s rebotein 1;
+}
+
+@-webkit-keyframes rebotein{
+/*Izquierda a derecha*/
+  0%{
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+  }
+  50%{
+    opacity: 1;
+    -webkit-transform: translateX(40px);
+  }
+  70%{
+    opacity: 1;
+    -webkit-transform: translateX(-20px);
+  }
+}
+
+#loginbox {
+  margin-top: 30px;
+}
+
+#loginbox > div:first-child {
+  padding-bottom: 10px;
+}
+
+.iconmelon {
+  display: block;
+  margin: auto;
+}
+
+#form > div {
+  margin-bottom: 25px;
+}
+
+#form > div:last-child {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.panel-heading, .panel-title{
+  font-family: 'Questrial';
+  font-size: 20px;
+  border-color: rgba(172,172,172,.5);
+}
+
+.panel{
+  border-radius: 20px;
+  box-shadow: 0px 1px 0px rgba(0,0,0,0.3),inset 0px 1px 0px rgba(255,255,255,0.07);
+}
+
+.panel-body {
+  padding-top: 30px;
+  border-color: transparent;
+}
+
+.form-control, .input-group-addon{
+  border-color: rgba(172,172,172,.5);
+}
+
+.iconmelon,
+.im {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: block;
+  fill: #525151;
+}
+
+.iconmelon:after,
+.im:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+button, .btn{
+  font-family: 'Questrial';
+  font-size: 15px;
+  color: white;
+  background: #001a33;
+  border: 0;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button, .btn:hover {
+  background: #18bd9b;
+  font-style: bold;
+  color: black;
+}
+
+input[placeholder]{
+  color: rgba(172,172,172);
+  font-family: 'Questrial';
+}
+
+::-webkit-input-placeholder {
+  color: rgba(172,172,172);
+  opacity: transparent;
+  font-family: 'Questrial';
+}
